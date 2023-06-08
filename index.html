@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+          <div class="burger"><img src="./images/icon-menu.svg" alt=""></div>
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="menu">
+          
+          <div class="close"><img src="./images/icon-close.svg" alt=""></div>
+          <ul >
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+       
+      </div>
+
+      <div class="account">
+        <ul>
+          <li id="cart"  class="cart-notif"><img src="./images/icon-cart.svg" alt="">
+            <div class="cart-modal">
+              <div class="modal-title">
+                <p class="modal-headings">Cart <span>&times;</span></p>
+              </div>
+              <div class="cart-fill">
+                <div class="empty-cart">
+                  <p>Your cart is empty.</p>
+                </div>
+                <div class="order-cart">
+                  <div class="order">
+                    <div class="order-img">
+                      <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="order-info">
+                      <p class="order-name">Fall Limited Edition Sneakers</p>
+                      <p class="order-price"> $125.00 x <span class="order-quantity">3</span> <span class="total-price">$375.00</span></p>
+                    </div>
+                    <div class="delete-order">
+                      <img src="./images/icon-delete.svg" alt="">
+                    </div>
+                  </div>
+                  
+                  <a href="#" class="checkout">Checkout</a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <li class="profile"><img src="./images/image-avatar.png" alt=""></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="over-lay"></div>
+    <section class="container">
+      <div class="product-img-container">
+        <div class="lighbox-overlay"></div>
+        <div class="product-lightbox">
+          <div class="close-box"><svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg></div>
+          
+          <div class="product-carousel">
+            <div class="previous">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="current-product-img">
+                <img src="./images/image-product-1.jpg" alt="">
+            </div>
+            <div class="next">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </div>
+          </div>
+
+          <div class="lighbox-img-preview">
+            <div><img id="preview-img-0" src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+            <div><img id="preview-img-1" src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+            <div><img id="preview-img-2" src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+            <div><img id="preview-img-3" src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+          </div>
+        </div>
+
+
+        <div id="selected-product">
+          <img id="product-selected" src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="products-img">
+          <div class="product "><img id="pr-1" class="current-product-seclected" src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="product"><img id="pr-2" src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="product"><img id="pr-3" src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="product"><img id="pr-4" src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="eyebrow">SNEAKER COMPANY</p>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="sub">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything weeather can offer.</p>
+        <div class="price">
+          <p class="current-price">$125.00 <span class="percent-price">50%</span></p>
+          <p><del class="old-price">$250.00</del></p>
+        </div>
+
+        <div class="add-to-cart-container">
+          <div class="quantity">
+            <div id="minus"><img id="minus-img" src="./images/icon-minus.svg" alt=""></div>
+            <div id="quantity-number">0</div>
+            <div id="plus"><img id="plus-img" src="./images/icon-plus.svg" alt=""></div>
+          </div>
+          <p class="add-to-cart-btn">
+            <span>
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+            </span>
+            Add to cart
+          </p->
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
